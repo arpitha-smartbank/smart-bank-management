@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bank Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>SMART BANK</h2>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Login</h1>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Demo Password" required>
+            <button class="btn" type="button">Login</button>
+        </form>
+        <p>New user? <a href="signup.html">Create Account</a></p>
+    </section>
+</main>
+
+<footer>
+    College Demo Project
+</footer>
+
+</body>
+</html>
