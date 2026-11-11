@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bank - Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>SMART BANK</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Create Your Account</h1>
+        <p>Welcome to Smart Bank Management System</p>
+
+        <form id="signupForm">
+            <input type="text" id="name"
+                placeholder="Enter Your Name" required>
+
+            <input type="tel" id="phone"
+                placeholder="Enter Demo Phone Number"
+                pattern="[0-9]{10}" required>
+
+            <input type="password" id="password"
+                placeholder="Create Password" required>
+
+            <input type="password" id="confirmPassword"
+                placeholder="Confirm Password" required>
+
+            <button type="submit" class="btn">
+                Create Account
+            </button>
+        </form>
+
+        <p id="message"></p>
+
+        <p>Already have an account?
+            <a href="login.html">Login Here</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Smart Bank - College Demo Project</p>
+</footer>
+
+<script>
+document.getElementById("signupForm").addEventListener("submit",
+function(event) {
+    event.preventDefault();
+
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+        document.getElementById("message").textContent =
+            "Passwords do not match!";
+        return;
+    }
+
+    document.getElementById("message").textContent =
+        "Demo form completed successfully!";
+});
+</script>
+
+</body>
+</html>
