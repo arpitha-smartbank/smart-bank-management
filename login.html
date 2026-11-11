@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bank - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>SMART BANK</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Welcome Back!</h1>
+        <p>Login to Smart Bank Demo</p>
+
+        <form id="loginForm">
+            <input type="text" id="username"
+                placeholder="Enter Your Name" required>
+
+            <input type="password" id="password"
+                placeholder="Enter Demo Password" required>
+
+            <button type="submit" class="btn">
+                Login
+            </button>
+        </form>
+
+        <p id="message"></p>
+
+        <p>New User?
+            <a href="signup.html">Create Account</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Smart Bank - College Demo Project</p>
+</footer>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit",
+function(event) {
+    event.preventDefault();
+
+    document.getElementById("message").textContent =
+        "Demo login form submitted!";
+});
+</script>
+
+</body>
+</html>
